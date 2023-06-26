@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header>
+        ROCK PAPER SCISSORS
       </header>
-    </div>
+      <main className='main'>
+        <div id='messageBox'>
+          <div>Fistful of Fury</div>
+          <div>Win 5 rounds to defeat the Machine!</div>
+        </div>
+        <div id='rounds-counter'>
+          ROUND {1}
+        </div>
+        <div id='game-area'>
+          <div className='score-label' id='player-score'>
+            You 0
+          </div>
+          <div className='score-label' id='comp-score'>
+            CPU 0
+          </div>
+        </div>
+      </main>
+      <footer>
+        Géza Maurer. &#169; 2023. 
+      </footer>
+    </div> 
   );
 }
 
